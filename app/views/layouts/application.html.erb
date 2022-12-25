@@ -15,7 +15,9 @@
       <div id="nav">
         <ul>
           <% if user_signed_in? %>
-            <li><%= link_to "ログアウト", destroy_user_session_path %></li>
+            <li>
+              <%= link_to "ログアウト", destroy_user_session_path, data: { turbo_method: :delete } %>
+            </li>
           <% end %>
         </ul>
       </div>
