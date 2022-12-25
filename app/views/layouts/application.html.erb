@@ -11,6 +11,15 @@
   </head>
 
   <body>
+    <div id="wrapper">
+      <div id="nav">
+        <ul>
+          <% if user_signed_in? %>
+            <li><%= link_to "ログアウト", destroy_user_session_path %></li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <%= yield %>
