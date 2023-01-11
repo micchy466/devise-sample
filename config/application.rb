@@ -34,5 +34,6 @@ module DeviseSample
     # Don't generate system test files.
     config.generators.system_tests = nil
     config.customlogger = Logger.new(Rails.root.join('log/custom.log'))
+    config.i18n.default_locale = :ja
   end
 end

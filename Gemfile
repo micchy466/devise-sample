@@ -66,3 +66,5 @@ end
 
 gem 'dotenv-rails'
 gem 'devise'
+gem 'devise-i18n'
+gem 'devise-i18n-views'
